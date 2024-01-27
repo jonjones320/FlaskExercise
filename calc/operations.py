@@ -19,3 +19,13 @@ def div(a, b):
     """Divide a by b."""
 
     return a / b
+
+def math(a,b, function):
+    """Add, sub, mult or divide a & b based on input"""
+    math_dict = {
+        "add": add(a,b),
+        "sub": sub(a,b),
+        "mult": mult(a,b),
+        "div": div(a,b)
+    }
+    return f"{math_dict[function](a,b)}"
